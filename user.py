@@ -13,5 +13,5 @@ def save_user(self):
     saves users information
 
     '''  
-     
+  User.user_list.append(self)   
 
