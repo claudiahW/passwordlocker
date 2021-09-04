@@ -1,5 +1,6 @@
 import unittest # Importing the unittest module
 from user import User # Importing the user class
+
 class TestUser(unittest.TestCase):
 
     '''
@@ -8,3 +9,11 @@ class TestUser(unittest.TestCase):
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
+def setUp(self):
+        '''
+        Set up method to run before each test cases.
+        '''
+        self.new_user = User("Claudia","Wanjiru","0712345678","claudia@ms.com") # create contact object
+
+
+    
