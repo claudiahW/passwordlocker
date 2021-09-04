@@ -1,17 +1,13 @@
-class User:
+class user:
     '''
-class that generates a new user instance
+    its a class that generates a new instance of users
     '''
-user_list =[]
-
-def __init__(self,user_name,password):
-    self.user_name = user_name
-    self.password = password
-
-def save_user(self):
-    '''
-    saves users information
-
-    '''  
-  User.user_list.append(self)   
-
+    user_list = []
+    def __init__(self,user_name, password):
+        self.user_name = user_name
+        self.password = password
+    def save_user(self):
+        '''
+        saves account details of the user information
+        '''    
+        user.user_list.append(self)
