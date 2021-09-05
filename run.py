@@ -54,12 +54,40 @@ def main():
             entered_username =input()
             print('your password')
             entered_password = input()
-            
+
+        else:
+            print(f"welcome:{entered_username} to your account")
+            print('\n')
+
+
+    elif short_code =='lg':
+        print('Welcome')
+        print('Enter your username')   
+        default_user_name =input()
+
+        print('Enter password')
+        default_user_password = input()
+        print('\n')
+        while default_user_name != 'testuser' or default_user_password !='1234':
+            print("Wrong username or password.Username 'testuser' and password '1234'")
+            print('Enter username')
+            default_user_name = input()
+
+            print ('Enter password')
+            default_user_password =input()
+            print('\n')
+        else:
+            print('login successful')
+            print('\n')
+            print('\n')
+    elif  short_code =='ex':
+        br
+    else:print("enter valid code to continue")
+if __name__ == '__main__':
+      main() 
 
 
 
 
 
 
-
-        
