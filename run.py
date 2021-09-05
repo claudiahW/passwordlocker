@@ -15,21 +15,38 @@ def save_user(user):
     user.save_user()    
 
 def main():
-    while true:
+    while True:
         print("Welcome to password locker!")
         print('\n')
         print("select a short code to use for navigation.to create a new user use 'nu':to login use lg:to exit  use ex:")
         short_code = input().lower()
         print('\n')
 
-    if short_code =="nu":
+    if short_code =='nu':
         print('create username')
         created_user_name = input()
 
         print('create password')
         created_user_password =input()
-        
+
+        print('confirm your password')
+        confirm_password = input()
+
+
+        while confirm_password != created_user_password:
+            print ('ooops password is incorrect!')
+            print('enter your password')
+            created_user_password = input()
+            print('confirm your password')
+            confirm_password =()
+        else:
+            print(f'congratulations {created_user_password}! account creation successful')
+            print('\n')
             
+
+
+
+
 
 
 
